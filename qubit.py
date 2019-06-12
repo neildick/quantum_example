@@ -20,3 +20,11 @@ class Qubit:
         self.state = np.dot(np.array([[0, 1],
                                       [1, 0]]),
                                      self.state)
+
+    def Y(self):
+        self.state = np.dot(np.array([[0, 1j],
+                                      [-1j, 0]]),
+                            self.state)
+
+
+        # Z  is [1,0;0,-1]
