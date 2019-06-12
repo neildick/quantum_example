@@ -8,3 +8,8 @@ class Qubit:
         self.a = a
         self.b = b
         self.state = self.a*zero + self.b*one
+
+    def X(self):
+        self.state = np.dot(np.array([[0, 1],
+                                      [1, 0]]),
+                                     self.state)
