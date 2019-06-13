@@ -22,8 +22,8 @@ class Qubit:
                                      self.state)
 
     def Y(self):
-        self.state = np.dot(np.array([[0, 1j],
-                                      [-1j, 0]]),
+        self.state = np.dot(np.array([[0, -1j],
+                                      [1j, 0]]),
                             self.state)
 
 
