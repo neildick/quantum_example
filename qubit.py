@@ -27,4 +27,7 @@ class Qubit:
                             self.state)
 
 
-        # Z  is [1,0;0,-1]
+    def Z(self):
+        self.state = np.dot(np.array([[1, 0 ],
+                                      [0, -1]]),
+                            self.state)
